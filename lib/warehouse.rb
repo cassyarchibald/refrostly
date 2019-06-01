@@ -9,7 +9,7 @@ class Warehouse
   end
 
 
-  def process_order(order)
+  def process_order_event(order)
     # If inventory cannot fulfill order, do not process order
     if @inventory[order.item_ordered] >= order.item_quantity
       @inventory[order.item_ordered] -= order.item_quantity

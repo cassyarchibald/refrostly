@@ -16,7 +16,7 @@ class Store
   end
 
   def process_order_event(order)
-    @warehouse.process_order(order)
+    @warehouse.process_order_event(order)
     # If not processed, add to hash of when that product ran out of stock
     if order.processed == false
       if @unprocessed_items[order.item_ordered]

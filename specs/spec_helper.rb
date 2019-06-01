@@ -1,5 +1,6 @@
 require 'minitest/spec'
 require "minitest/autorun"
+require "minitest/reporters"
 
 require_relative '../lib/order_event'
 require_relative '../lib/data_processor'
