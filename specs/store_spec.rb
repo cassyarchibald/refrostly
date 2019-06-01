@@ -57,4 +57,30 @@ describe 'Store' do
     expect(@store.unprocessed_items["sled"]).must_equal Array.new(1, order.date)
   end
 
+  it "can show unprocessed items" do
+    @store.process_restock_event(@restock_event)
+    order = OrderEvent.new(
+        order_id: "999",
+        customer_id: "1",
+        date: DateTime.parse("2018-02-02T13:13:29"),
+        item_ordered: "sled",
+        item_quantity: 99,
+        item_price: "96.33",
+        )
+    order_two = OrderEvent.new(
+        order_id: "999",
+        customer_id: "1",
+        date: DateTime.parse("2018-02-02T13:13:29"),
+        item_ordered: "shovel",
+        item_quantity: 99,
+        item_price: "96.33",
+        )
+    @store.process_order_event(order)
+    @store.process_order_event(order_two)
+    expected_unprocessed_items_string = "Out Of Stock Dates\n"
+    expected_unprocessed_items_string += "Sled:\n\t\t2018-02-02T13:13:29+00:00\n"
+    expected_unprocessed_items_string += "Shovel:\n\t\t2018-02-02T13:13:29+00:00\n"
+    assert_equal expected_unprocessed_items_string, @store.show_unprocessed_items
+  end
+
 end

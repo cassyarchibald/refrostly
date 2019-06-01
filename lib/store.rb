@@ -28,11 +28,16 @@ class Store
     end
   end
 
-  # TODO - figure out what to do with below method
+  # For each item, show item and a list of when it ran out of stock/could not fulfill an order
   def show_unprocessed_items
-    @unprocessed_items.each do |item|
-
+    unprocessed_items_result = "Out Of Stock Dates\n"
+    @unprocessed_items.each do |item, dates|
+      unprocessed_items_result += "#{item.capitalize}:\n"
+      dates.each do |date|
+        unprocessed_items_result += "\t\t#{(date.to_s)}\n"
+      end
     end
+    return unprocessed_items_result
   end
 
 private
