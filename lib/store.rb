@@ -6,8 +6,8 @@ class Store
   attr_accessor :unprocessed_items
 
   def initialize(store_name, warehouse_name)
-    @name = name
-    @warehouse = Warehouse.new(name: warehouse_name)
+    @name = store_name
+    @warehouse = Warehouse.new(warehouse_name)
     @unprocessed_items = Hash.new()
   end
 
@@ -28,6 +28,7 @@ class Store
     end
   end
 
+  # TODO - figure out what to do with below method
   def show_unprocessed_items
     @unprocessed_items.each do |item|
 

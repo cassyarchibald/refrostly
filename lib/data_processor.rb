@@ -12,17 +12,20 @@ class DataProcessor
     @events = Array.new
     @status = "Not started"
     @store = Store.new(store_name, warehouse_name)
-    @order_data = JSON.parse(File.read(order_file))
-    @restock_data = JSON.parse(File.read(restock_file))
-    parse_order_data
-    parse_restock_data
+    load_data(order_file, restock_file)
     @events = @events.sort_by { |event| event.date }
     process_events
-    p @store.unprocessed_items["sled"].first.to_s
     update_status
   end
 
   private
+  def load_data(order_file, restock_file)
+    @order_data = JSON.parse(File.read(order_file))
+    @restock_data = JSON.parse(File.read(restock_file))
+    parse_order_data
+    parse_restock_data
+  end
+
   def parse_order_data
     @order_data.each do |order_data|
 
@@ -33,7 +36,7 @@ class DataProcessor
           date: date,
           customer_id: order_data["customer_id"],
           item_ordered: order_data["item_ordered"],
-          item_quantity: order_data["item_quantity"],
+          item_quantity: order_data["item_quantity"].to_i,
           item_price: order_data["item_price"]
       )
       @events << order
@@ -47,7 +50,7 @@ class DataProcessor
       restock_event =  RestockEvent.new(
           date: date,
           item_stocked: restock_data["item_stocked"],
-          item_quantity: restock_data["item_quantity"],
+          item_quantity: restock_data["item_quantity"].to_i,
           manufacturer: restock_data["manufacturer"],
           wholesale_price: restock_data["wholesale_price"]
       )
@@ -75,13 +78,7 @@ class DataProcessor
 
 end
 
-testDataRun = DataProcessor.new(
-    order_file: "orders.json",
-    restock_file: "restocks.json",
-    store_name: "Refrostly",
-    warehouse_name: "warehouse_5"
-)
-p testDataRun.status
+
 
 # testDataRun.store.unprocessed_items.each do |item|
 # #   p item

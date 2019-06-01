@@ -2,25 +2,26 @@ class Warehouse
 
   attr_reader :name, :inventory
 
-  def initialize(name:)
-    @name = name,
+  def initialize(name)
+    @name = name
     @inventory = Hash.new
     initialize_stock
   end
 
 
   def process_order(order)
-    if @inventory[order.item_ordered] != 0
-      @inventory[order.item_ordered] -= 1
+    # If inventory cannot fulfill order, do not process order
+    if @inventory[order.item_ordered] >= order.item_quantity
+      @inventory[order.item_ordered] -= order.item_quantity
       order.processed = true
     end
   end
 
-  def process_restock_event(event)
-    if @inventory[event.item_stocked]
-      @inventory[event.item_stocked] += 1
+  def process_restock_event(restock)
+    if @inventory[restock.item_stocked]
+      @inventory[restock.item_stocked] += restock.item_quantity
     else
-      raise ArgumentError, "Invalid product #{event.item_stocked} provided"
+      raise ArgumentError, "Invalid product #{restock.item_stocked} provided"
     end
   end
 
