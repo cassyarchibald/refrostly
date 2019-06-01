@@ -35,7 +35,7 @@ class DataProcessor
           order_id: order_data["order_id"],
           date: date,
           customer_id: order_data["customer_id"],
-          item_ordered: order_data["item_ordered"],
+          item_ordered: order_data["item_ordered"].downcase,
           item_quantity: order_data["item_quantity"].to_i,
           item_price: order_data["item_price"]
       )
@@ -49,7 +49,7 @@ class DataProcessor
       date = DateTime.parse(restock_data["restock_date"])
       restock_event =  RestockEvent.new(
           date: date,
-          item_stocked: restock_data["item_stocked"],
+          item_stocked: restock_data["item_stocked"].downcase,
           item_quantity: restock_data["item_quantity"].to_i,
           manufacturer: restock_data["manufacturer"],
           wholesale_price: restock_data["wholesale_price"]

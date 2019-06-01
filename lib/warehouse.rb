@@ -26,9 +26,11 @@ class Warehouse
   end
 
   def show_inventory
-    @inventory.each do |item|
-      puts "#{item.item_quantity} #{item.item_stocked}"
+    result = "\n"
+    @inventory.each do |item, count|
+      result += "#{item.capitalize}: Quantity: #{count}\n"
     end
+    return result
   end
 
   private

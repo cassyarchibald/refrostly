@@ -55,4 +55,9 @@ describe "Warehouse" do
     assert_equal false, order.processed
   end
 
+  it "can show inventory" do
+    expected_result = "\nSkis: Quantity: 0\nShovel: Quantity: 0\nSled: Quantity: 0\nSnowblower: Quantity: 0\nTires: Quantity: 0\n"
+    assert_equal @warehouse.show_inventory, expected_result
+  end
+
 end
