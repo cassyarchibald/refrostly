@@ -1,0 +1,42 @@
+[
+  {
+    "order_id": "630",
+    "customer_id": "4",
+    "order_date": "2018-01-02T13:13:29",
+    "item_ordered": "sled",
+    "item_quantity": "6",
+    "item_price": "96.93"
+  },
+  {
+    "order_id": "669",
+    "customer_id": "4",
+    "order_date": "2018-01-02T02:59:38",
+    "item_ordered": "snowblower",
+    "item_quantity": "1",
+    "item_price": "107.42"
+  },
+  {
+    "order_id": "669",
+    "customer_id": "4",
+    "order_date": "2018-01-02T02:59:38",
+    "item_ordered": "shovel",
+    "item_quantity": "5",
+    "item_price": "107.42"
+  },
+  {
+    "order_id": "669",
+    "customer_id": "4",
+    "order_date": "2018-01-02T02:59:38",
+    "item_ordered": "winter tires",
+    "item_quantity": "5",
+    "item_price": "107.42"
+  },
+  {
+    "order_id": "669",
+    "customer_id": "4",
+    "order_date": "2018-01-06T02:59:38",
+    "item_ordered": "sled",
+    "item_quantity": "5",
+    "item_price": "107.42"
+  }
+]

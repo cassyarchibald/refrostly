@@ -5,8 +5,7 @@ require_relative 'order_event'
 require_relative 'restock_event'
 
 class DataProcessor
-  attr_reader :events, :store
-  attr_accessor :status
+  attr_reader :store
 
   def initialize(order_file:, restock_file:, store_name:, warehouse_name:)
     @events = Array.new

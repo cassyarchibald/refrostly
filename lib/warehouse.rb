@@ -35,7 +35,7 @@ class Warehouse
 
   private
   def initialize_stock
-    products = ["skis", "shovel", "sled", "snowblower", "tires"]
+    products = ["skis", "shovel", "sled", "snowblower", "winter tires"]
     products.each do |product|
       @inventory[product] = 0
     end

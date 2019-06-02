@@ -1,0 +1,44 @@
+[
+  {
+    "restock_date": "2018-01-01T04:00:00Z",
+    "item_stocked": "shovel",
+    "item_quantity": 25,
+    "manufacturer": "Knightly Shovels, Inc.",
+    "wholesale_price": 85.6
+  },
+  {
+    "restock_date": "2018-01-01T04:00:00Z",
+    "item_stocked": "snowblower",
+    "item_quantity": 10,
+    "manufacturer": "Knightly Shovels, Inc.",
+    "wholesale_price": 73.62
+  },
+  {
+    "restock_date": "2018-01-01T04:00:00Z",
+    "item_stocked": "sled",
+    "item_quantity": 10,
+    "manufacturer": "Knightly Shovels, Inc.",
+    "wholesale_price": 73.62
+  },
+  {
+    "restock_date": "2018-01-04T04:00:00Z",
+    "item_stocked": "winter tires",
+    "item_quantity": 10,
+    "manufacturer": "Knightly Shovels, Inc.",
+    "wholesale_price": 73.62
+  },
+  {
+    "restock_date": "2018-01-04T04:00:00Z",
+    "item_stocked": "winter tires",
+    "item_quantity": 10,
+    "manufacturer": "Knightly Shovels, Inc.",
+    "wholesale_price": 73.62
+  },
+  {
+    "restock_date": "2018-01-04T04:00:00Z",
+    "item_stocked": "sled",
+    "item_quantity": 4,
+    "manufacturer": "Knightly Shovels, Inc.",
+    "wholesale_price": 73.62
+  }
+]

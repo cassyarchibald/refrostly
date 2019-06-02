@@ -24,7 +24,7 @@ describe "Warehouse" do
   it "can be initialized" do
     expect(@warehouse).must_be_instance_of Warehouse
     assert_equal @warehouse.name, "Warehouse"
-    assert_equal @warehouse.inventory, {"skis"=>0, "shovel"=>0, "sled"=>0, "snowblower"=>0, "tires"=>0}
+    assert_equal @warehouse.inventory, {"skis"=>0, "shovel"=>0, "sled"=>0, "snowblower"=>0, "winter tires"=>0}
   end
 
   it "can process a restock event" do
@@ -56,7 +56,11 @@ describe "Warehouse" do
   end
 
   it "can show inventory" do
-    expected_result = "\nSkis: Quantity: 0\nShovel: Quantity: 0\nSled: Quantity: 0\nSnowblower: Quantity: 0\nTires: Quantity: 0\n"
+    expected_result = "\t\tSkis: Quantity: 0\n"
+    expected_result += "\t\tShovel: Quantity: 0\n"
+    expected_result += "\t\tSled: Quantity: 0\n"
+    expected_result += "\t\tSnowblower: Quantity: 0\n"
+    expected_result += "\t\tWinter tires: Quantity: 0\n"
     assert_equal @warehouse.show_inventory, expected_result
   end
 

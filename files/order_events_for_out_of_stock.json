@@ -1,0 +1,26 @@
+[
+  {
+    "order_id": "630",
+    "customer_id": "4",
+    "order_date": "2018-03-09T13:13:29",
+    "item_ordered": "sled",
+    "item_quantity": "100",
+    "item_price": "96.93"
+  },
+  {
+  "order_id": "669",
+  "customer_id": "4",
+  "order_date": "2018-11-02T02:59:38",
+  "item_ordered": "snowblower",
+  "item_quantity": "100",
+  "item_price": "107.42"
+  },
+  {
+  "order_id": "614",
+  "customer_id": "4",
+  "order_date": "2018-02-10T01:40:52",
+  "item_ordered": "tires",
+  "item_quantity": "100",
+  "item_price": "102.75"
+  }
+]
