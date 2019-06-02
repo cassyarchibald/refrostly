@@ -50,8 +50,10 @@ When processing an order, it will check if there is enough inventory to fulfill 
 The warehouse is also able to show the overall inventory.
 
 ## Assumptions Made
+
 - I assumed that it was possible to not have stock for an item the order would not be processed. Rather than partially filling an order, the inventory remains untouched. 
 If later an order that could be fulfilled given the current stock, the order would be fulfilled. 
+- I assumed that the program would be given a orders event file and restock events file in json format.
 - I assumed that it was possible to run out of stock multiple times. For example:
     - There are 5 shovels in inventory to start 
     - An order came in for 6 shovels, the order is not processed/the unprocessed item summary now has this item/the date and time of this order 

@@ -5,7 +5,7 @@ require_relative 'order_event'
 require_relative 'restock_event'
 
 class DataProcessor
-  attr_reader :store
+  attr_reader :store, :status
 
   def initialize(order_file:, restock_file:, store_name:, warehouse_name:)
     @events = Array.new
@@ -15,11 +15,12 @@ class DataProcessor
     @events = @events.sort_by { |event| event.date }
     process_events
     update_status
-    show_result
+    print show_result
   end
 
   private
   def load_data(order_file, restock_file)
+    # If I had additional time, I would wrap this to check if load/parse was successful
     @order_data = JSON.parse(File.read(order_file))
     @restock_data = JSON.parse(File.read(restock_file))
     parse_order_data
@@ -69,15 +70,16 @@ class DataProcessor
   end
 
   def show_result
-    puts "*********** #{@status} ***********"
+    result = "*********** #{@status} ***********"
     if @status == "SUCCESS"
-      puts "\tAll orders were processed. \n\tBelow is the remaining inventory:"
-      print @store.warehouse.show_inventory
+      result += "\n\tAll orders were processed. \n\tBelow is the remaining inventory:"
+      result += @store.warehouse.show_inventory
     elsif @status == "OUT OF STOCK"
-      puts "Not all orders were processed due to running out of inventory"
-      puts "Below are the items that ran out of stock/when the items ran out:"
-      print @store.show_unprocessed_items
+      result += "\nNot all orders were processed due to running out of inventory"
+      result += "\nBelow are the items that ran out of stock/when the items ran out:"
+      result += @store.show_unprocessed_items
     end
+    return result
   end
 
 end

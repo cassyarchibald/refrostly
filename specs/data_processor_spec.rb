@@ -28,7 +28,17 @@ describe "DataProcessor" do
     expect(@data_processor_without_enough_stock.store).must_be_instance_of Store
   end
 
+  it "results in success if all orders were processed" do
+    assert_equal "SUCCESS", @data_processor_with_enough_stock.status
+    expected_remaining_inventory = {"shovel" => 0, "sled" => 9, "skis" => 0, "snowblower" => 10, "winter tires" => 2}
+    assert_equal expected_remaining_inventory, @data_processor_with_enough_stock.store.warehouse.inventory
+  end
 
+  # it "results in out of stock if all orders were not processed" do
+  #   assert_equal "OUT OF STOCK", @data_processor_without_enough_stock.status
+  #   expected_remaining_inventory = {"shovel" => 0, "sled" => 0, "skis" => 0, "snowblower" => 5, "winter tires" => 0}
+  #   assert_equal expected_remaining_inventory, @data_processor_without_enough_stock.store.warehouse.inventory
+  # end
 
 
 end

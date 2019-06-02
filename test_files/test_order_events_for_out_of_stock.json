@@ -1,6 +1,6 @@
 [
   {
-    "order_id": "669",
+    "order_id": "1",
     "customer_id": "4",
     "order_date": "2018-01-02T02:59:38",
     "item_ordered": "shovel",
@@ -8,7 +8,7 @@
     "item_price": "107.42"
   },
   {
-    "order_id": "630",
+    "order_id": "2",
     "customer_id": "4",
     "order_date": "2018-01-02T13:13:29",
     "item_ordered": "snowblower",
@@ -16,7 +16,7 @@
     "item_price": "96.93"
   },
   {
-    "order_id": "669",
+    "order_id": "3",
     "customer_id": "4",
     "order_date": "2018-01-03T02:59:38",
     "item_ordered": "snowblower",
@@ -24,7 +24,7 @@
     "item_price": "107.42"
   },
   {
-    "order_id": "669",
+    "order_id": "4",
     "customer_id": "4",
     "order_date": "2018-01-02T02:59:38",
     "item_ordered": "shovel",
@@ -32,7 +32,7 @@
     "item_price": "107.42"
   },
   {
-    "order_id": "669",
+    "order_id": "5",
     "customer_id": "4",
     "order_date": "2018-01-02T02:59:38",
     "item_ordered": "winter tires",
@@ -40,7 +40,7 @@
     "item_price": "107.42"
   },
   {
-    "order_id": "669",
+    "order_id": "6",
     "customer_id": "4",
     "order_date": "2018-01-03T02:59:38",
     "item_ordered": "shovel",
@@ -48,7 +48,7 @@
     "item_price": "107.42"
   },
   {
-    "order_id": "669",
+    "order_id": "7",
     "customer_id": "4",
     "order_date": "2018-01-02T02:59:38",
     "item_ordered": "winter tires",

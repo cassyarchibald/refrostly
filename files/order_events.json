@@ -19,7 +19,7 @@
     "order_id": "614",
     "customer_id": "4",
     "order_date": "2018-02-10T01:40:52",
-    "item_ordered": "tires",
+    "item_ordered": "winter tires",
     "item_quantity": "10",
     "item_price": "102.75"
   },
@@ -51,7 +51,7 @@
     "order_id": "608",
     "customer_id": "5",
     "order_date": "2018-01-25T16:59:25",
-    "item_ordered": "tires",
+    "item_ordered": "winter tires",
     "item_quantity": "7",
     "item_price": "84.52"
   },
@@ -59,7 +59,7 @@
     "order_id": "672",
     "customer_id": "5",
     "order_date": "2018-11-07T00:30:12",
-    "item_ordered": "tires",
+    "item_ordered": "winter tires",
     "item_quantity": "3",
     "item_price": "105.41"
   },
@@ -67,7 +67,7 @@
     "order_id": "677",
     "customer_id": "5",
     "order_date": "2018-11-14T03:06:11",
-    "item_ordered": "tires",
+    "item_ordered": "winter tires",
     "item_quantity": "3",
     "item_price": "97.19"
   },
@@ -155,7 +155,7 @@
     "order_id": "665",
     "customer_id": "6",
     "order_date": "2018-10-19T14:05:26",
-    "item_ordered": "tires",
+    "item_ordered": "winter tires",
     "item_quantity": "9",
     "item_price": "96.96"
   },
@@ -179,7 +179,7 @@
     "order_id": "609",
     "customer_id": "7",
     "order_date": "2018-01-27T11:07:47",
-    "item_ordered": "tires",
+    "item_ordered": "winter tires",
     "item_quantity": "1",
     "item_price": "96.73"
   },
@@ -291,7 +291,7 @@
     "order_id": "689",
     "customer_id": "8",
     "order_date": "2018-12-16T09:28:17",
-    "item_ordered": "tires",
+    "item_ordered": "winter tires",
     "item_quantity": "4",
     "item_price": "88.49"
   },
@@ -363,7 +363,7 @@
     "order_id": "637",
     "customer_id": "9",
     "order_date": "2018-04-27T12:33:10",
-    "item_ordered": "tires",
+    "item_ordered": "winter tires",
     "item_quantity": "2",
     "item_price": "103.78"
   },
@@ -371,7 +371,7 @@
     "order_id": "675",
     "customer_id": "9",
     "order_date": "2018-11-11T01:27:16",
-    "item_ordered": "tires",
+    "item_ordered": "winter tires",
     "item_quantity": "3",
     "item_price": "92.68"
   },
@@ -427,7 +427,7 @@
     "order_id": "621",
     "customer_id": "10",
     "order_date": "2018-02-24T21:25:50",
-    "item_ordered": "tires",
+    "item_ordered": "winter tires",
     "item_quantity": "2",
     "item_price": "96.88"
   },
@@ -459,7 +459,7 @@
     "order_id": "653",
     "customer_id": "10",
     "order_date": "2018-09-25T21:46:04",
-    "item_ordered": "tires",
+    "item_ordered": "winter tires",
     "item_quantity": "3",
     "item_price": "104.78"
   },
@@ -499,7 +499,7 @@
     "order_id": "596",
     "customer_id": "11",
     "order_date": "2018-01-04T10:51:27",
-    "item_ordered": "tires",
+    "item_ordered": "winter tires",
     "item_quantity": "4",
     "item_price": "98.64"
   },
@@ -523,7 +523,7 @@
     "order_id": "601",
     "customer_id": "11",
     "order_date": "2018-01-17T00:14:08",
-    "item_ordered": "tires",
+    "item_ordered": "winter tires",
     "item_quantity": "6",
     "item_price": "95.45"
   },
@@ -627,7 +627,7 @@
     "order_id": "634",
     "customer_id": "13",
     "order_date": "2018-03-30T04:54:53",
-    "item_ordered": "tires",
+    "item_ordered": "winter tires",
     "item_quantity": "6",
     "item_price": "104.97"
   },
@@ -651,7 +651,7 @@
     "order_id": "612",
     "customer_id": "13",
     "order_date": "2018-02-06T00:37:11",
-    "item_ordered": "tires",
+    "item_ordered": "winter tires",
     "item_quantity": "2",
     "item_price": "89.11"
   },
@@ -723,7 +723,7 @@
     "order_id": "685",
     "customer_id": "14",
     "order_date": "2018-12-10T00:58:22",
-    "item_ordered": "tires",
+    "item_ordered": "winter tires",
     "item_quantity": "5",
     "item_price": "105.4"
   },
@@ -731,7 +731,7 @@
     "order_id": "662",
     "customer_id": "14",
     "order_date": "2018-10-18T00:59:21",
-    "item_ordered": "tires",
+    "item_ordered": "winter tires",
     "item_quantity": "7",
     "item_price": "89.7"
   },
@@ -747,7 +747,7 @@
     "order_id": "684",
     "customer_id": "14",
     "order_date": "2018-12-05T19:21:40",
-    "item_ordered": "tires",
+    "item_ordered": "winter tires",
     "item_quantity": "9",
     "item_price": "98.48"
   },
@@ -779,7 +779,7 @@
     "order_id": "641",
     "customer_id": "14",
     "order_date": "2018-07-21T17:55:03",
-    "item_ordered": "tires",
+    "item_ordered": "winter tires",
     "item_quantity": "5",
     "item_price": "105.63"
   },
@@ -795,7 +795,7 @@
     "order_id": "654",
     "customer_id": "14",
     "order_date": "2018-09-26T00:27:33",
-    "item_ordered": "tires",
+    "item_ordered": "winter tires",
     "item_quantity": "7",
     "item_price": "101.31"
   }
