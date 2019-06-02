@@ -10,5 +10,4 @@ class RestockEvent
     @manufacturer = manufacturer
     @wholesale_price = wholesale_price
   end
-
 end

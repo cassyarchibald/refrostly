@@ -31,7 +31,7 @@ class DataProcessor
     @order_data.each do |order_data|
 
       date = DateTime.parse(order_data["order_date"])
-
+          # If I had additional time, I would validate the input for valid number/dates
           order = OrderEvent.new(
           order_id: order_data["order_id"],
           date: date,
@@ -46,7 +46,7 @@ class DataProcessor
 
   def parse_restock_data
     @restock_data.each do |restock_data|
-
+      # If I had additional time, I would validate the input for valid number/dates
       date = DateTime.parse(restock_data["restock_date"])
       restock_event =  RestockEvent.new(
           date: date,
@@ -81,5 +81,4 @@ class DataProcessor
     end
      print result
   end
-
 end

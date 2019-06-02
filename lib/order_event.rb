@@ -12,5 +12,4 @@ class OrderEvent
     @item_price = item_price
     @processed = processed
   end
-
 end 
