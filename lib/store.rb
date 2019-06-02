@@ -39,9 +39,5 @@ class Store
     end
     return unprocessed_items_result
   end
-
-private
-
-
 end
 

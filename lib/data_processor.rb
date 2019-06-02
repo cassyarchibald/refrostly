@@ -16,6 +16,7 @@ class DataProcessor
     @events = @events.sort_by { |event| event.date }
     process_events
     update_status
+    show_result
   end
 
   private
@@ -69,18 +70,15 @@ class DataProcessor
   end
 
   def show_result
+    puts "*********** #{@status} ***********"
     if @status == "SUCCESS"
-      @warehouse.show_inventory
+      puts "\tAll orders were processed. \n\tBelow is the remaining inventory:"
+      print @store.warehouse.show_inventory
     elsif @status == "OUT OF STOCK"
-      @store.show_unprocessed_items
+      puts "Not all orders were processed due to running out of inventory"
+      puts "Below are the items that ran out of stock/when the items ran out:"
+      print @store.show_unprocessed_items
     end
   end
 
 end
-
-
-
-# testDataRun.store.unprocessed_items.each do |item|
-# #   p item
-# # end
-#

@@ -26,9 +26,9 @@ class Warehouse
   end
 
   def show_inventory
-    remaining_inventory = "\n"
+    remaining_inventory = ""
     @inventory.each do |item, count|
-      remaining_inventory += "#{item.capitalize}: Quantity: #{count}\n"
+      remaining_inventory += "\t\t#{item.capitalize}: Quantity: #{count}\n"
     end
     return remaining_inventory
   end
