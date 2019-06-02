@@ -15,7 +15,7 @@ class DataProcessor
     @events = @events.sort_by { |event| event.date }
     process_events
     update_status
-    print show_result
+    show_result
   end
 
   private
@@ -79,7 +79,7 @@ class DataProcessor
       result += "\nBelow are the items that ran out of stock/when the items ran out:"
       result += @store.show_unprocessed_items
     end
-    return result
+     print result
   end
 
 end

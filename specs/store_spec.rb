@@ -54,7 +54,7 @@ describe 'Store' do
     assert_equal 10, @store.warehouse.inventory["sled"]
     assert_equal 99, order.item_quantity
     assert_equal false, order.processed
-    expect(@store.unprocessed_items["sled"]).must_equal Array.new(1, order.date)
+    expect(@store.unprocessed_items["sled"]).must_equal Array.new(1, order.date.to_s)
   end
 
   it "can show unprocessed items" do

@@ -3,26 +3,40 @@
     "restock_date": "2018-01-01T04:00:00Z",
     "item_stocked": "sled",
     "item_quantity": 16,
-    "manufacturer": "Knightly Shovels, Inc.",
+    "manufacturer": "Rosebud, Inc.",
     "wholesale_price": 85.6
   },
   {
     "restock_date": "2018-01-01T04:00:00Z",
     "item_stocked": "snowblower",
     "item_quantity": 11,
-    "manufacturer": "Knightly Shovels, Inc.",
+    "manufacturer": "Shiveria Manufacturing, LLC",
     "wholesale_price": 73.62
   },
   {
     "restock_date": "2018-01-03T04:00:00Z",
     "item_stocked": "sled",
     "item_quantity": 5,
-    "manufacturer": "Knightly Shovels, Inc.",
+    "manufacturer": "Rosebud, Inc.",
     "wholesale_price": 73.62
   },
   {
     "restock_date": "2018-01-01T04:00:00Z",
     "item_stocked": "winter tires",
+    "item_quantity": 10,
+    "manufacturer": "Great Glacier Goods, Inc.",
+    "wholesale_price": 73.62
+  },
+  {
+    "restock_date": "2018-01-01T04:00:00Z",
+    "item_stocked": "skis",
+    "item_quantity": 2,
+    "manufacturer": "Ice Cap Zone Corp.",
+    "wholesale_price": 73.62
+  },
+  {
+    "restock_date": "2018-01-01T04:00:00Z",
+    "item_stocked": "shovel",
     "item_quantity": 10,
     "manufacturer": "Knightly Shovels, Inc.",
     "wholesale_price": 73.62
@@ -31,7 +45,7 @@
     "restock_date": "2018-01-03T04:00:00Z",
     "item_stocked": "winter tires",
     "item_quantity": 4,
-    "manufacturer": "Knightly Shovels, Inc.",
+    "manufacturer": "Great Glacier Goods, Inc.",
     "wholesale_price": 73.62
   }
 ]

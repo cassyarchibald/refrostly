@@ -3,56 +3,48 @@
     "order_id": "1",
     "customer_id": "4",
     "order_date": "2018-01-02T02:59:38",
-    "item_ordered": "shovel",
-    "item_quantity": "10",
+    "item_ordered": "sled",
+    "item_quantity": 6,
     "item_price": "107.42"
   },
   {
     "order_id": "2",
     "customer_id": "4",
     "order_date": "2018-01-02T13:13:29",
-    "item_ordered": "snowblower",
-    "item_quantity": "5",
+    "item_ordered": "sled",
+    "item_quantity": 99,
     "item_price": "96.93"
   },
   {
-    "order_id": "3",
+    "order_id": "2",
     "customer_id": "4",
-    "order_date": "2018-01-03T02:59:38",
+    "order_date": "2018-01-02T13:13:29",
+    "item_ordered": "winter tires",
+    "item_quantity": 6,
+    "item_price": "96.93"
+  },
+  {
+    "order_id": "2",
+    "customer_id": "4",
+    "order_date": "2018-01-02T13:13:29",
+    "item_ordered": "skis",
+    "item_quantity": 3,
+    "item_price": "96.93"
+  },
+  {
+    "order_id": "2",
+    "customer_id": "4",
+    "order_date": "2018-01-02T13:13:29",
     "item_ordered": "snowblower",
-    "item_quantity": "100",
-    "item_price": "107.42"
+    "item_quantity": 6,
+    "item_price": "96.93"
   },
   {
-    "order_id": "4",
+    "order_id": "2",
     "customer_id": "4",
-    "order_date": "2018-01-02T02:59:38",
+    "order_date": "2018-01-02T13:13:29",
     "item_ordered": "shovel",
-    "item_quantity": "100",
-    "item_price": "107.42"
-  },
-  {
-    "order_id": "5",
-    "customer_id": "4",
-    "order_date": "2018-01-02T02:59:38",
-    "item_ordered": "winter tires",
-    "item_quantity": "5",
-    "item_price": "107.42"
-  },
-  {
-    "order_id": "6",
-    "customer_id": "4",
-    "order_date": "2018-01-03T02:59:38",
-    "item_ordered": "shovel",
-    "item_quantity": "10",
-    "item_price": "107.42"
-  },
-  {
-    "order_id": "7",
-    "customer_id": "4",
-    "order_date": "2018-01-02T02:59:38",
-    "item_ordered": "winter tires",
-    "item_quantity": "100",
-    "item_price": "107.42"
+    "item_quantity": 5,
+    "item_price": "96.93"
   }
 ]

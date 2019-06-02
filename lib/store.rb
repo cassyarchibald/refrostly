@@ -20,10 +20,10 @@ class Store
     # If not processed, add to hash of when that product ran out of stock
     if order.processed == false
       if @unprocessed_items[order.item_ordered]
-        @unprocessed_items[order.item_ordered] << order.date
+        @unprocessed_items[order.item_ordered] << order.date.to_s
       else
         @unprocessed_items[order.item_ordered] = Array.new
-        @unprocessed_items[order.item_ordered] <<= order.date
+        @unprocessed_items[order.item_ordered] <<= order.date.to_s
       end
     end
   end
