@@ -59,3 +59,9 @@ If later an order that could be fulfilled given the current stock, the order wou
     - An order came in for 6 shovels, the order is not processed/the unprocessed item summary now has this item/the date and time of this order 
     - An order then came in for 3 shovels. The order is processed/inventory is reduced from 5 to 2
     - then an order for 5 shovels, the order is not processed/the unprocessed inventory for shovels now has two entries for when it ran out of stock 
+
+## Future Plans
+- Check for invalid input 
+- Update so user can provide file paths for the order events/restock events files via command line
+- Update so after files are processed user can enter a prompt to view the warehouse inventory
+- Save the orders that could not be processed/set fulfilling those orders as a higher priority than later orders
